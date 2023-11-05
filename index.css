@@ -1,0 +1,406 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: url(big-brown-wood-plank-wall-texture-background_BwCUvg_hMg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+body {
+    /* ... your other styles */
+    background-attachment: fixed;
+}
+
+
+   
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    height:500px;
+    justify-self: center;
+    justify-content: center;
+  gap: 10px;
+  grid-column-gap: 10px;
+
+}
+
+.grid-container > div {
+    
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+.grid-container .item2{
+    margin-left: 0%;
+    height: 500px;
+    width: 250px;
+}
+
+.grid-container .item4{
+    margin-top: -210px;
+    margin-left: 0%;
+    height: 500px;
+    width: 250px;
+}
+
+.grid-container .item5 {
+    width: 1100px;
+    height: 15px; /* Increase the height of the grid cell */
+    justify-self: center; /* Center horizontally within its grid cell */
+    align-self: center;
+    margin-left: -25%; 
+    margin-bottom: 0;/* Center vertically within its grid cell */
+}
+
+
+
+
+.grid-container .item3{
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    width:700px;
+    margin-top: -150px;
+    height: fit-content;
+    margin-left:10px;
+    margin-right: 30px;
+    }
+#text{
+    padding-left: 10px;
+font-style: oblique;
+}
+
+#myphoto {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 70px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#myphoto:hover {
+    transform: scale(1.4); /* Increase the scale to zoom in (1.2 means 120%) on hover */
+}
+
+
+
+#text{
+    text-align: left;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -10px;
+}
+p{
+    font-size: 18px;
+}
+
+.item1 {
+    text-align: center;
+    margin-top: 20px;
+    height: 55px;
+    }
+    .item1 nav {
+    text-align: center;
+    background: url();
+    display: inline-block;
+    width: auto;
+    }
+    .item1 nav ul {
+    margin:10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    }
+    .item1 nav ul li {
+    display: inline-block;
+    padding: 0 60px;
+    vertical-align: middle;
+    }
+    .item1 nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    }
+    .item1 nav ul li a:hover {
+    color: #211ed1;
+    }
+    
+
+
+
+
+.item3{
+    background: url(images/menu4.jpeg);
+    justify-content: center;
+    justify-self: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -50px;
+   
+}
+
+
+#basketball{
+    margin-right: 100px;
+    margin-left: 320px;
+    margin-top: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background:url(images/basketball.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(45deg);
+}
+
+#tennis{
+    margin-left: -40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    float:left;
+    width: 100px;
+    height: 100px;
+    background:url(images/tennis.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-330deg);
+}
+
+.social-menu ul {
+    margin-top: 170px;
+    margin-left: 200px;
+    padding: 0;
+    display: flex;
+}
+
+
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position:relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+
+
+.item5 {
+    margin-top: -490px;
+    background: rgba(250, 246, 246, 0.0); /* Set the background color of item5 with transparency */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100%;
+}
+
+.item1{
+    background: rgba(250, 246, 246, 0.3);
+}
+
+.item4{
+    margin-top: -250px;
+}
+.gallery {
+    margin-top: -60px;
+    margin-left: -60px;
+    --s: 160px; /* control the size */
+    --g: 15px;   /* control the gap */
+    
+    display: grid;
+    width: 450px;
+    height: 320px;
+    grid: auto-flow var(--s)/repeat(2,var(--s));
+    gap: var(--g);
+  }
+  .gallery > img {
+    width: 100%; 
+    aspect-ratio: 1;
+    cursor: pointer;
+    filter: grayscale();
+    z-index: 0;
+    transition: .25s,z-index 0s .25s;
+  }
+  .gallery > img:hover {
+    width: calc(200% + var(--g));
+    filter: grayscale(0);
+    z-index: 1;
+    --_c: 50%;
+    transition: .4s,z-index 0s;
+  }
+  .gallery > img:nth-child(1){
+    clip-path: circle(var(--_c,55% at 70% 70%));
+    place-self: start;
+  }
+  .gallery > img:nth-child(2){
+    clip-path: circle(var(--_c,55% at 30% 70%));
+    place-self: start end;
+  }
+  .gallery > img:nth-child(3){
+    clip-path: circle(var(--_c,55% at 70% 30%));
+    place-self: end start;
+  }
+  .gallery > img:nth-child(4){
+    clip-path: circle(var(--_c,55% at 30% 30%));
+    place-self: end;
+  }
+
+
+.gallery1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.item2{
+    margin-top: -220px;
+    margin-right:- 50px;
+    margin-left: 20px;
+}
+
+
+
+.wrapper{
+    width: 500px;
+    height: 500px;
+    background:transparent;
+    margin-left: -120px;
+}
+.wrapper {
+    margin-left: -60px;
+    --s: 160px; /* control the size */
+    --g: 15px;   /* control the gap */
+    
+    display: grid;
+    width: 450px;
+    height: 320px;
+    grid: auto-flow var(--s)/repeat(2,var(--s));
+    gap: var(--g);
+  }
+  .wrapper > img {
+    width: 100%; 
+    aspect-ratio: 1;
+    cursor: pointer;
+    filter: grayscale();
+    z-index: 0;
+    transition: .25s,z-index 0s .25s;
+  }
+  .wrapper > img:hover {
+    width: calc(200% + var(--g));
+    filter: grayscale(0);
+    z-index: 1;
+    --_c: 50%;
+    transition: .4s,z-index 0s;
+  }
+  .wrapper > img:nth-child(1){
+    clip-path: circle(var(--_c,55% at 70% 70%));
+    place-self: start;
+  }
+  .wrapper > img:nth-child(2){
+    clip-path: circle(var(--_c,55% at 30% 70%));
+    place-self: start end;
+  }
+  .wrapper> img:nth-child(3){
+    clip-path: circle(var(--_c,55% at 70% 30%));
+    place-self: end start;
+  }
+  .wrapper > img:nth-child(4){
+    clip-path: circle(var(--_c,55% at 30% 30%));
+    place-self: end;
+  }
+
+
+.wrapper{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+@media (max-width: 414px) {}
+    .grid-container {
+      background-size: cover;
+      background-position: center;
+      height: 130vh;
+      width: 180vh; /* Adjust this height as needed for mobile devices */
+    }
+
+
+
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      

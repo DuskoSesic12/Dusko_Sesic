@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./Document_files/font-awesome.min.css"><link rel="stylesheet" href="./Document_files/index.css"></head>
+<body>
+    <div id="main">
+    <div class="grid-container">
+      
+        <div class="item1">
+            <nav>
+                <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">My photo galery</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html">My learnings</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html">My certifikates</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html">Contact me!</a></li>
+                </ul>
+                </nav>
+                
+        </div>
+        <div class="item2">My playlist</div>
+        <div class="item3">
+          <div class="social-menu">
+                    
+            <ul>
+               <li><a href="http://127.0.0.1:5500/index.html"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="http://127.0.0.1:5500/index.html"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://127.0.0.1:5500/index.html"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="http://127.0.0.1:5500/index.html"><i class="fa fa-youtube"></i></a></li>
+               <li><a href="http://127.0.0.1:5500/index.html"><i class="fa fa-linkedin"></i></a></li>
+             </ul>
+           </div>
+            <div id="photo"></div>
+             <div id="text">
+                <h1 id="h1">About me</h1>
+                <p>My name is Dusko Sesic , I'm a 29-year-old originally from Slovenia, and for the past seven years, I've been living and working in Austria. I'm on a journey to become a self-taught front-end developer, and this website marks my very first project using HTML and CSS. Additionally, I'm currently immersed in learning JavaScript.
+
+                    Beyond coding, I have a passion for sports, particularly basketball and tennis. Nature holds a special place in my heart, and I love spending time in the mountains. Of course, my cherished moments are those spent with family and friends, creating lifelong memories.</p>
+                    <div id="basketball" class="clearfix"></div>
+                    <div id="tennis" class="clearfix"></div>
+                    
+            </div>
+        </div>  
+        <div class="item4">My photo gallery</div>
+        <div class="item5">©DuskoSesic</div>
+      </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
